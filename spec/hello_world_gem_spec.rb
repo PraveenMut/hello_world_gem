@@ -3,7 +3,7 @@ RSpec.describe HelloWorldGem do
     expect(HelloWorldGem::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it 'returns a value of 0' do
+    expect(HelloWorldGem.hello_world).to eq(0)
   end
 end
